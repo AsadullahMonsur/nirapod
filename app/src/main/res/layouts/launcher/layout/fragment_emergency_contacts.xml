@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:layout_marginTop="30dp"
+            android:id="@+id/fragment_emergency_contacts_layout_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+        <TextView
+                android:id="@+id/fragment_emergency_contacts_header_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="start"
+                android:gravity="center"
+                android:background="@color/white"
+                android:text="Emergency Contacts"
+                android:fontFamily="serif-monospace"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/fragment_emergency_contacts_add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:gravity="center"
+                android:background="@color/blue_01"
+                android:text="Add Contact"
+                android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/fragment_emergency_contacts_layout_02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_emergency_contacts_layout_01"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/fragment_emergency_contacts_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

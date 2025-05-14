@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:id="@+id/persoanl_info_layout_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <TextView
+                    android:id="@+id/security_two_factor_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:text="Two Factor Authentication"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/security_two_factor_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:background="@color/white"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/persoanl_info_layout_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/persoanl_info_layout_01"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <TextView
+                    android:id="@+id/security_location_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:text="Location Sharing"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/persoanl_info_layout_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/persoanl_info_layout_02"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <Spinner
+                    android:id="@+id/security_location_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:backgroundTintMode="add"
+                    android:gravity="center"
+                    android:popupBackground="@color/white"
+                    android:elevation="16dp"
+                    android:textAlignment="center"
+                    android:animateLayoutChanges="true"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/persoanl_info_layout_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/persoanl_info_layout_03"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <TextView
+                    android:id="@+id/security_data_backup_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:text="Two Factor Authentication"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/security_data_backup_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:background="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:id="@+id/persoanl_info_layout_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/persoanl_info_layout_04"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <TextView
+                    android:id="@+id/security_notification_level_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:text="Location Sharing"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/persoanl_info_layout_06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/persoanl_info_layout_05"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <Spinner
+                    android:id="@+id/security_notification_level_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:backgroundTint="@color/teal_700"
+                    android:backgroundTintMode="add"
+                    android:gravity="center"
+                    android:popupBackground="@color/white"
+                    android:elevation="16dp"
+                    android:textAlignment="center"
+                    android:animateLayoutChanges="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:id="@+id/persoanl_info_layout_07"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/persoanl_info_layout_06"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <TextView
+                    android:id="@+id/security_account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:background="@color/white"
+                    android:text="Account Security"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/persoanl_info_layout_08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/persoanl_info_layout_07"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/security_change_password_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@color/white_02"
+                    android:text="Change Password"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/persoanl_info_layout_09"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/persoanl_info_layout_08"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/security_delete_account_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="@color/white_02"
+                    android:text="Delete Account"
+                    android:fontFamily="serif-monospace"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

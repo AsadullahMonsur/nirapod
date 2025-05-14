@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+            android:id="@+id/notification_id"
+            android:orderInCategory="1"
+            android:title="Item 01"
+            android:icon="@drawable/add_alert_icon"
+            app:showAsAction="always"/>
+    <item
+            android:id="@+id/setting_id"
+            android:orderInCategory="1"
+            android:title="Item 02"
+            android:icon="@drawable/message_icon"
+            app:showAsAction="always"/>
+
+</menu>

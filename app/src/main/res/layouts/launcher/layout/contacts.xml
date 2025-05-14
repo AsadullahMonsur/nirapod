@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <RelativeLayout
+                android:id="@+id/contacts_layout_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/contacts_layout_01_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <LinearLayout
+                            android:id="@+id/contacts_layout_01_a_01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/contacts_name_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:layout_gravity="start"
+                                android:gravity="center"
+                                android:text="Johnson Jhonson"
+                                android:fontFamily="serif-monospace"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/contacts_layout_01_a_02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                        <TextView
+                                android:id="@+id/contacts_relation_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="32dp"
+                                android:gravity="center"
+                                android:text="Mother"
+                                android:fontFamily="serif-monospace"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:textColor="@color/error"
+                                android:textColorHint="@color/black"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/contacts_layout_01_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/contacts_number_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:text="+880-1928-121314"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:id="@+id/contacts_layout_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@id/contacts_layout_01">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/contacts_edit_btn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/edit_icon"
+                    android:fontFamily="serif-monospace"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_marginTop="16dp"
+                android:id="@+id/contacts_layout_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/contacts_layout_02">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/contacts_call_btn"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/add_call_icon"
+                    android:fontFamily="serif-monospace"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
